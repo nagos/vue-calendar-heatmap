@@ -101,6 +101,9 @@ Vue.component('calendarHeatmap', VueCalendarHeatmap.CalendarHeatmap)
 ```
 
 # Usage
+``` html
+ <calendar-heatmap :values="[{ date: '2018-9-22', count: 6 }, { date: '2018-9-23', count: 7 }]" :end-date="'2018-9-24'"/>
+```
 
 ## Availables props
 
@@ -112,7 +115,7 @@ Array of objects with `date` and `count` keys. `date` values can be a date parse
 ### **endDate** - `end-date` - _required_
 Can be a date parseable string, a millisecond timestamp, or a Date object. The calendar will start automatically one year before this date.
 ``` html
- <calendar-heatmap :end-date="2018-9-22" ... />
+ <calendar-heatmap :end-date="'2018-9-22'" ... />
 ```
 
 ### **rangeColor** - `range-color`
