@@ -1,0 +1,20 @@
+<html>
+    <link rel="stylesheet" href="dist/vue-calendar-heatmap.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.1.6/dist/vue.js"></script>
+    <script src="dist/vue-calendar-heatmap.browser.js"></script>
+    
+    <body>
+        <div id="example">
+            <calendar-heatmap :values="[{ date: '2020-9-22', count: 6 }]" end-date="2020-12-1"/>
+          </div>
+    </body>
+
+    <script>
+        Vue.use(VueCalendarHeatmap)
+        new Vue({
+            el: '#example',
+            data: { hello: 'Hello World!' }
+        })
+    </script>
+</html>
